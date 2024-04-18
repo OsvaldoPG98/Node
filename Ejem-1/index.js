@@ -91,7 +91,7 @@ app.patch('/movies/:id', (req, res) => {
         ...movies[movieIndex],
         ...result.data
     }
-
+    
     movies[movieIndex] = updateMovie;
     return res.json(updateMovie);
 });
